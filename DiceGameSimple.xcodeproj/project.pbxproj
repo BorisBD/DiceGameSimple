@@ -61,6 +61,7 @@
 				AD22885C274428F70006EC62 /* AppDelegate.swift */,
 				AD22885E274428F70006EC62 /* SceneDelegate.swift */,
 				AD55CF2B27498D5B00F8C4E7 /* Controller */,
+				AD55CF2C27498D7100F8C4E7 /* View */,
 				AD56E973274597E3001F844C /* Model */,
 				AD228865274428F80006EC62 /* Assets.xcassets */,
 				AD228867274428F80006EC62 /* LaunchScreen.storyboard */,
@@ -89,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				AD56E97427459810001F844C /* Dice.swift */,
-				AD55CF2C27498D7100F8C4E7 /* View */,
 			);
 			path = Model;
 			sourceTree = "<group>";

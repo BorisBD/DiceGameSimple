@@ -20,6 +20,10 @@ class ViewController: UIViewController {
       
     let dice = Dice()
     
+   //let width = UIScreen.main.bounds.width
+  
+    
+    @IBOutlet var diceCollection: [UIImageView]!
     
     
     @IBOutlet weak var botDice1: UIImageView!
@@ -120,5 +124,9 @@ class ViewController: UIViewController {
         user1Label.isHidden = true
         user1Score = 0
     }
+    
+
+    
+    
 }
 

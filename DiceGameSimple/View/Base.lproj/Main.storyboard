@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceGameSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-8h-fir">
+                                <rect key="frame" x="185.5" y="295.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cVc-uh-pXU"/>
+                                    <constraint firstAttribute="width" secondItem="i4g-8h-fir" secondAttribute="height" multiplier="1:1" id="h4y-fL-DzF"/>
+                                    <constraint firstAttribute="width" constant="100" id="hm7-MW-UdR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="Xkh-bZ-JKu">
+                                <rect key="frame" x="35" y="295.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xkh-bZ-JKu" secondAttribute="height" multiplier="1:1" id="KdQ-on-0pN"/>
+                                    <constraint firstAttribute="height" constant="100" id="kOl-sb-1cN"/>
+                                    <constraint firstAttribute="width" constant="100" id="sVL-zp-YQq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJr-0T-Bf7">
+                                <rect key="frame" x="10" y="259.5" width="300.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOH-H7-F5Y">
+                                <rect key="frame" x="90" y="400" width="140.5" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fr0-Nr-l1b"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="12" maxX="10" maxY="10"/>
+                                <state key="normal" title="Drop the dices"/>
+                                <connections>
+                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Fm-Gk-Ofl"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="QyM-o6-cv0">
+                                <rect key="frame" x="35" y="129.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="J5o-5I-lIW"/>
+                                    <constraint firstAttribute="width" constant="100" id="Knd-zV-f5i"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8U-B3-rdD">
+                                <rect key="frame" x="201.5" y="10" width="109" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="SFj-Gg-ZaC"/>
+                                    <constraint firstAttribute="height" constant="30" id="fwq-92-nre"/>
+                                </constraints>
+                                <state key="normal" title="Start new game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="zJH-rs-JQw">
+                                <rect key="frame" x="185.5" y="129.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bXv-1A-Tog"/>
+                                    <constraint firstAttribute="height" constant="100" id="ck1-C7-uFf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelTop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fw-Jl-Bqs">
+                                <rect key="frame" x="10" y="94.5" width="300.5" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 points to win" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQI-3g-Jtx">
+                                <rect key="frame" x="10" y="50" width="300.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.6043359637260437" green="0.92118698358535767" blue="0.74292629957199097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QyM-o6-cv0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="1bm-yV-opa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sJr-0T-Bf7" secondAttribute="trailing" id="1ot-6H-D8X"/>
+                            <constraint firstItem="kQI-3g-Jtx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2Ml-HM-VXO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kQI-3g-Jtx" secondAttribute="trailing" constant="10" id="3Zv-EA-WZL"/>
+                            <constraint firstItem="l8U-B3-rdD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="5lh-LD-ctU"/>
+                            <constraint firstItem="Xkh-bZ-JKu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="9S1-Dv-RKK"/>
+                            <constraint firstItem="sJr-0T-Bf7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AD7-fn-5yL"/>
+                            <constraint firstItem="i4g-8h-fir" firstAttribute="top" secondItem="sJr-0T-Bf7" secondAttribute="bottom" constant="15" id="BLD-fP-5bz"/>
+                            <constraint firstItem="1fw-Jl-Bqs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Bqu-S2-nu6"/>
+                            <constraint firstItem="l8U-B3-rdD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="201.33000000000001" id="DJI-KO-0se"/>
+                            <constraint firstItem="i4g-8h-fir" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xkh-bZ-JKu" secondAttribute="trailing" constant="50" id="Flo-Cc-drP"/>
+                            <constraint firstItem="kQI-3g-Jtx" firstAttribute="top" secondItem="l8U-B3-rdD" secondAttribute="bottom" constant="10" id="FoV-yA-aO9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOH-H7-F5Y" secondAttribute="trailing" constant="90" id="HGp-Ye-dIb"/>
+                            <constraint firstItem="QyM-o6-cv0" firstAttribute="top" secondItem="1fw-Jl-Bqs" secondAttribute="bottom" constant="15" id="Mlk-0Z-qYv"/>
+                            <constraint firstItem="sJr-0T-Bf7" firstAttribute="top" secondItem="QyM-o6-cv0" secondAttribute="bottom" constant="30" id="POq-nZ-W8Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fw-Jl-Bqs" secondAttribute="trailing" constant="10" id="PxE-7b-AaT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8U-B3-rdD" secondAttribute="trailing" constant="10" id="Qxv-nR-eSA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8U-B3-rdD" secondAttribute="trailing" constant="10" id="RDC-Pf-wDH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zJH-rs-JQw" secondAttribute="trailing" constant="35" id="SwF-N2-k8f"/>
+                            <constraint firstItem="l8U-B3-rdD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="U9i-JQ-Nk5"/>
+                            <constraint firstItem="sJr-0T-Bf7" firstAttribute="top" secondItem="zJH-rs-JQw" secondAttribute="bottom" constant="30" id="YGk-m5-Md8"/>
+                            <constraint firstItem="sJr-0T-Bf7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="c7q-j4-Zb7"/>
+                            <constraint firstItem="FOH-H7-F5Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="cPo-Yc-qhl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i4g-8h-fir" secondAttribute="trailing" constant="35" id="e1x-dd-YyG"/>
+                            <constraint firstItem="kQI-3g-Jtx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hU4-Ci-YKP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FOH-H7-F5Y" secondAttribute="bottom" constant="30" id="hUT-ls-PmV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8U-B3-rdD" secondAttribute="trailing" constant="10" id="ho6-Gs-fzG"/>
+                            <constraint firstItem="zJH-rs-JQw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QyM-o6-cv0" secondAttribute="trailing" constant="31" id="iAP-ec-1mF"/>
+                            <constraint firstItem="kQI-3g-Jtx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="nEs-2O-7kh"/>
+                            <constraint firstItem="Xkh-bZ-JKu" firstAttribute="top" secondItem="sJr-0T-Bf7" secondAttribute="bottom" constant="15" id="pAW-p7-GeZ"/>
+                            <constraint firstItem="l8U-B3-rdD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="rNx-mf-97l"/>
+                            <constraint firstItem="kQI-3g-Jtx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="riQ-nm-BUW"/>
+                            <constraint firstItem="sJr-0T-Bf7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="whc-jJ-uoP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botDice1" destination="QyM-o6-cv0" id="vDf-hg-UD4"/>
+                        <outlet property="botDice2" destination="zJH-rs-JQw" id="xIj-o4-X6X"/>
+                        <outlet property="botNUser2Label" destination="1fw-Jl-Bqs" id="nID-Nh-r4R"/>
+                        <outlet property="rollButton" destination="FOH-H7-F5Y" id="UGd-Pz-6R8"/>
+                        <outlet property="user1Label" destination="sJr-0T-Bf7" id="73E-gU-6zX"/>
+                        <outlet property="userDice1" destination="i4g-8h-fir" id="Bb4-Eh-wGT"/>
+                        <outlet property="userDice2" destination="Xkh-bZ-JKu" id="05e-eE-WPq"/>
+                        <outletCollection property="diceCollection" destination="zJH-rs-JQw" collectionClass="NSMutableArray" id="MlP-SR-Mez"/>
+                        <outletCollection property="diceCollection" destination="QyM-o6-cv0" collectionClass="NSMutableArray" id="0d0-pv-vPK"/>
+                        <outletCollection property="diceCollection" destination="i4g-8h-fir" collectionClass="NSMutableArray" id="5cp-A1-3hP"/>
+                        <outletCollection property="diceCollection" destination="Xkh-bZ-JKu" collectionClass="NSMutableArray" id="Aev-nJ-taC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="96.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiceOne" width="100" height="100"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
